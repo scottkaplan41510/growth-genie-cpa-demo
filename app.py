@@ -96,7 +96,7 @@ def main():
     )
 
     # Button to run summary
-    if st.button("Run CPA Summary ✅"):
+    if st.button("Run CPA Summaries ✅"):
         summary_df = build_summary(df, start_date, end_date, target_cpa)
         st.write("### Summary")
         st.dataframe(summary_df, use_container_width=True)
